@@ -1,53 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ejemplo de HTML y CSS</title>
-<style>
- 
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Personal</title>
+    <style>
+        /* Estilos generales */
+        body {
+           font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+           background-color: #f4f4f4;
+        }
 
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-  }
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-</style>
+        /* Estilos para el encabezado */
+        header {
+           background-color: #60D7FA;
+           color: #fff;
+           text-align: center;
+           padding: 1em;
+        }
+
+        /* Estilos para la barra de navegación */
+        nav {
+           background-color: #444;
+           text-align: center;
+           padding: 0.5em;
+        }
+        
+        #nav img {
+           width: 200px;
+           height: 220px;
+           border-radius: 150%;
+        }
+        
+        nav a {
+           color: #fff;
+           text-decoration: none;
+           margin: 0 1em;
+           font-weight: bold;
+        }
+
+        /* Estilos para las secciones */
+        section {
+           padding: 2em;
+           background-color: #fff;
+           margin: 1em 0;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+               
+        /* Estilos para los títulos de sección */
+        section h2 {
+           color: #007bff;
+           margin-bottom: 0.5em;
+        }
+
+        /* Estilos para las listas en las secciones */
+        ul {
+           list-style-type: none;
+           padding: 0;
+        }
+
+        li {
+           margin-bottom: 0.5em;
+        }
+
+        /* Estilos para los enlaces */
+        a {
+           color: #000000;
+           text-decoration: none;
+           transition: color 0.3s;
+        }
+
+        a:hover {
+           color: #0056b3;
+        }
+
+        /* Estilos para el pie de página */
+        footer {
+           background-color: #60D7FA;
+           color: #fff;
+           text-align: center;
+           padding: 1em;
+        }
+    </style>
 </head>
 <body>
-  
- 
-<header>
-    
-   
-<h1>Hola mundo</h1>
-<h2>Estoy aquí para ustedes</h2>
-  
-  </
-</header>
-  <div class="container">
-    <h2>Bienvenido a mi página web</h2>
-    <p>Esta es una página web básica creada por Jean Aparicio.</p>
-  </div>
-
+    <header>
+        <h1>Mi Portafolio Personal</h1>
+        <p>Bienvenido a mi portafolio en línea</p>
+    </header>
+    <nav>
+        <a href="#acerca">Acerca de mí</a> |
+        <a href="#proyectos">Proyectos</a> |
+        <a href="#habilidades">Habilidades</a> |
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <section id="nav">
+        <img src="https://images.unsplash.com/photo-1622698639855-fda2a55e0cbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80" alt="Imagen de cabecera">
+        <h2>Acerca de mí</h2>
+        <p>¡Hola! Soy Jean Aparicio. Soy un Estudiante apasionado por Marketing Digital.</p>
+    </section>
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <ul>
+            <li><a href="#">Mokepon</a></li>
+            <li><a href="#">Piedra, Papel o Tijera</a></li>
+            <li><a href="#">Surcholas</a></li>
+        </ul>
+    </section>
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>HTML</li>
+        </ul>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¡Me encantaría escucharte! Puedes contactarme a través de:</p>
+        <p>Email: lasgmh@gmail.com</p>
+        <p>Teléfono: 320 5296585</p>
+    </section>
+    <footer>
+        <p>&copy; 2023 Jean Aparicio. Todos los derechos reservados.</p>
+    </footer>
 </body>
-
-</
-</body>
-
-</html>
-
-</
 </html>
