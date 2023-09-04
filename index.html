@@ -1,131 +1,153 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio Personal</title>
-    <style>
-        /* Estilos generales */
-        body {
-           font-family: Arial, sans-serif;
-           margin: 0;
-           padding: 0;
-           background-color: #f4f4f4;
-        }
+  <title>Mi Portafolio Personal</title>
+  <style>
+    /* Reset de estilos para el body */
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
-        /* Estilos para el encabezado */
-        header {
-           background-color: #60D7FA;
-           color: #fff;
-           text-align: center;
-           padding: 1em;
-        }
+    /* Estilos generales para los encabezados */
+    h1, h2 {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+    }
 
-        /* Estilos para la barra de navegación */
-        nav {
-           background-color: #444;
-           text-align: center;
-           padding: 0.5em;
-        }
-        
-        #nav img {
-           width: 200px;
-           height: 220px;
-           border-radius: 150%;
-        }
-        
-        nav a {
-           color: #fff;
-           text-decoration: none;
-           margin: 0 1em;
-           font-weight: bold;
-        }
+    h1 {
+        margin-bottom: 20px;
+    }
 
-        /* Estilos para las secciones */
-        section {
-           padding: 2em;
-           background-color: #fff;
-           margin: 1em 0;
-           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-               
-        /* Estilos para los títulos de sección */
-        section h2 {
-           color: #007bff;
-           margin-bottom: 0.5em;
-        }
+    /* Estilos para la sección de inicio */
+    #inicio {
+      padding: 50px;
+      background-color: #eba40a;
+      text-align: center;
+    }
 
-        /* Estilos para las listas en las secciones */
-        ul {
-           list-style-type: none;
-           padding: 0;
-        }
+    #inicio img {
+      width: 150px; /* Cambiar el ancho de la imagen según tu preferencia */
+      height: 150px; /* Cambiar la altura de la imagen según tu preferencia */
+      border-radius: 50%; /* Opcional: agregar bordes redondeados a la imagen */
+      display: inline-block;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
 
-        li {
-           margin-bottom: 0.5em;
-        }
 
-        /* Estilos para los enlaces */
-        a {
-           color: #000000;
-           text-decoration: none;
-           transition: color 0.3s;
-        }
+    /* Estilos para la sección de habilidades */
+    #habilidades {
+      padding: 50px;
+      background-color: #BCE5F5;
+    }
 
-        a:hover {
-           color: #0056b3;
-        }
+    /* Estilos para la lista de habilidades */
+    #habilidades ul {
+      list-style-type: none;
+    }
 
-        /* Estilos para el pie de página */
-        footer {
-           background-color: #60D7FA;
-           color: #fff;
-           text-align: center;
-           padding: 1em;
-        }
-    </style>
+    /* Estilos para la sección de proyectos */
+    #proyectos {
+      padding: 50px;
+      background-color: #FFFFC2;
+    }
+
+    /* Estilos para la lista de proyectos */
+    #proyectos ul {
+      list-style-type: none;
+    }
+
+    /* Estilos para la sección de contacto */
+    #contacto {
+      padding: 50px;
+      background-color: #DCE0EA;
+    }
+
+    /* Estilos para la lista de contacto */
+    #contacto ul {
+      list-style-type: none;
+    }
+
+    /* Estilos generales para los párrafos y listas */
+    p, ul {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #333;
+    }
+
+    p {
+        max-width: 300px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Estilos para los elementos de lista */
+    li {
+      display: inline; /* Cambia a "inline-block" si quieres que tengan un ancho fijo */
+      margin-right: 10px; /* Espaciado entre los elementos de lista */
+    }
+  </style>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
-        <h1>Mi Portafolio Personal</h1>
-        <p>Bienvenido a mi portafolio en línea</p>
-    </header>
-    <nav>
-        <a href="#acerca">Acerca de mí</a> |
-        <a href="#proyectos">Proyectos</a> |
-        <a href="#habilidades">Habilidades</a> |
-        <a href="#contacto">Contacto</a>
-    </nav>
-    <section id="nav">
-        <img src="https://images.unsplash.com/photo-1622698639855-fda2a55e0cbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80" alt="Imagen de cabecera">
-        <h2>Acerca de mí</h2>
-        <p>¡Hola! Soy Jean Aparicio. Soy un Estudiante apasionado por Marketing Digital.</p>
-    </section>
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <ul>
-            <li><a href="#">Mokepon</a></li>
-            <li><a href="#">Piedra, Papel o Tijera</a></li>
-            <li><a href="#">Surcholas</a></li>
-        </ul>
-    </section>
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>HTML</li>
-        </ul>
-    </section>
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>¡Me encantaría escucharte! Puedes contactarme a través de:</p>
-        <p>Email: lasgmh@gmail.com</p>
-        <p>Teléfono: 320 5296585</p>
-    </section>
-    <footer>
-        <p>&copy; 2023 Jean Aparicio. Todos los derechos reservados.</p>
-    </footer>
+  <!-- Sección de inicio -->
+  <section id="inicio">
+    <img src="https://images.unsplash.com/photo-1622698639855-fda2a55e0cbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Imagen de cabecera">
+    <h1>Jean Aparicio</h1>
+    <p>Programador web apasionado con experiencia en startups colombianas. Habilidades en HTML, CSS, JavaScript. Enfoque en interfaces de usuario atractivas y eficientes.</p>
+    <ul>
+        <!-- Enlaces a redes sociales -->
+        <li><a href="https://www.Facebook.com/">Facebook</a></li>
+        <li><a href="https://Instagram.com/">Instagram</a></li>
+        <li><a href="https://Twitter.com/">Twitter</a></li>
+        <!-- Agrega más enlaces a tus redes sociales aquí -->
+    </ul>
+  </section>
+
+  <!-- Sección de habilidades -->
+  <section id="habilidades">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Marketing Digital</li>
+    </ul>
+  </section>
+
+  <!-- Sección de proyectos -->
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <ul>
+      <li>Mokepon</li>
+      <li>Piedra, Papel y Tijera</li>
+      <li>Scraball</li>
+      <!-- Puedes agregar más proyectos aquí -->
+    </ul>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Puedes contactarme a traves de los siguientes medios:</p>
+    <ul>
+      <li>Email: meganarboleda@gmail.com</li>
+      <li>Telefono: 321 5206598</li>
+      <li>Redes sociales: enlace a tus perfiles en redes sociales</li>
+    </ul>
+  </section>
+
+  <!-- Puedes agregar más secciones según tus necesidades -->
+
 </body>
 </html>
